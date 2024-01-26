@@ -470,11 +470,11 @@ img {
 }
 
 .skills__tech img {
-  height: 15vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:5px auto;
+  margin:17px auto;
 }
 
 /*==================== QUALIFICATION ====================*/

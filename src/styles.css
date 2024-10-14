@@ -559,6 +559,10 @@ img {
   padding: 0 1.5rem;
 }
 
+.portfolio__description{
+  text-align: center;
+}
+
 .portfolio__data {
   display: flex;
   flex-direction: column;
@@ -578,6 +582,23 @@ img {
 
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
+}
+
+.glide__arrows{
+  width: 30px;
+  height: 30px;
+}
+
+.glide__arrow{
+  top:40%;
+  width: 30px;
+  height: 30px;
+}
+
+.glide__arrow i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .arrow--left,
@@ -706,7 +727,7 @@ img {
 @media screen and (max-width: 422px) {
   .container {
     margin-left: var(--mb-1);
-    margin-right: var(var(--mb-1));
+    margin-right: var(--mb-1);
   }
 
   .home__blob-img {
@@ -715,7 +736,6 @@ img {
 
   .nav {
     display: flex;
-    justify-content: center;
     gap: 2rem;
     align-items: center;
   }

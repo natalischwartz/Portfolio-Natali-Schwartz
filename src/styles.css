@@ -592,7 +592,10 @@ img {
 .glide__arrow{
   top:40%;
   width: 30px;
-  height: 30px;
+  /* height: 30px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .glide__arrow i{

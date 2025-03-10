@@ -557,6 +557,7 @@ img {
 
 .portfolio__content {
   padding: 0 1.5rem;
+  height:110vh;
 }
 
 .portfolio__description{
@@ -571,9 +572,12 @@ img {
 }
 
 .portfolio__img {
-  width: 265px;
+  width: 335px;
   border-radius: 0.5rem;
   justify-self: center;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
 }
 /* 
 .portfolio__title{

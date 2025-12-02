@@ -42,9 +42,9 @@ const Header = () =>{
 
 
     return (
-        <header className="fixed bottom-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-lg md:top-0
-        md:bottom-auto border border-amber-400">
-            <nav className="container mx-auto px-4 h-12 md:h-16  flex justify-between items-center">
+        <header className="fixed bottom-0 sm:top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-lg md:top-0
+        md:bottom-auto">
+            <nav className="mx-auto px-4 h-12 md:h-16  flex justify-between items-center">
                 {/* Logo */}
                 <a href="#" className="text-xl font-medium text-gray-900 dark:text-white
                 hover:text-purple-400 transition-colors">
@@ -52,14 +52,14 @@ const Header = () =>{
                 </a>
 
                 {/* Menú desktop */}
-                <div>
+                <div className="hidden sm:flex justify-center items-center">
                     {navItems.map((navLink, index)=>{
                         const Icon = navLink.icon
                         return(
                             <a key={index} href={navLink.href}
                             onClick={() =>{ setIsMenuOpen(false)}}
-                            className="flex flex-col items-center p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group">
-                                <Icon className="w-8 h-8 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"/>
+                            className="items-center p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group">
+                                {/* <Icon className="w-8 h-8 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"/> */}
                                 <span className="text-sm font-medium text-gray-900 dark:text-white">
                                     {navLink.text}
                                 </span>
@@ -75,55 +75,48 @@ const Header = () =>{
                     dark:hover:text-purple-400 text-xl"
                     aria-label="Cambiar tema"
                     >
-                    <i className={darkMode ? Sun : Moon}></i>
+                    {darkMode ? <Sun size={24}/> : <Moon size={24}/>}
                     </button>
 
                     {/* Boton menu movil */}
                     <button
                     onClick={()=> setIsMenuOpen(!isMenuOpen)}
-                    className="md:hidden text-gray-700 dark:text-gray-300 text-xl"
+                    className="sm:hidden text-gray-700 dark:text-gray-300 text-xl"
                     aria-label="Abrir mnenú">
-                        <Menu/>
+                        <Grid3x3/>
                     </button>
                 </div>
 
                 {/* Menu mobile */}
                 {isMenuOpen && (
-                    <div>
-                        <div>
-                            <button>
-
+                    <div className="absolute bottom-full left-0 w-full bg-white dark:bg-gray-800 shadow-lg rounded-t-2xl p-6 md:hidden">
+                        <div className="flex justify-end mb-4">
+                            <button
+                            onClick={()=> setIsMenuOpen(false)}
+                            className="text-purple-600 dark:text-purple-400"
+                            aria-label="Cerar menú">
+                                <X className="w-7 h-7"/>
                             </button>
-
-
                         </div>
 
 
-                        <div>
-                            {navItems.map((navLink, index)=>(
-                                <a href="">
-                                    <i>
-
-                                    </i>
-                                    <span>
-                                        {navLink.text}
-                                    </span>
-                                </a>
-                            ))}
-
-
-
-
+                        <div className="grid grid-cols-2 gap-4">
+                            {navItems.map((navLink, index)=>{
+                                const Icon = navLink.icon
+                        return(
+                            <a key={index} href={navLink.href}
+                            onClick={() =>{ setIsMenuOpen(false)}}
+                            className="flex flex-col items-center p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group">
+                                <Icon className="w-8 h-8 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"/>
+                                <span className="text-sm font-medium text-gray-900 dark:text-white">
+                                    {navLink.text}
+                                </span>
+                            </a>
+                            )
+                        })}
                         </div>
                     </div>
-
-
-
-
                 )}
-
-
-
             </nav>
         </header>
     )

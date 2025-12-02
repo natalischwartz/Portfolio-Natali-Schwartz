@@ -5,6 +5,14 @@ import tailwindAnimate from 'tailwindcss-animate';
 export default {
  darkMode: ["class"],
   content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}", "./app/**/*.{js,jsx}", "./src/**/*.{js,jsx}"],
+  theme: {
+    extend:{
+      // screens:{
+      //   // Breakpoints
+      //   'mobile-only': {'max': '639px'},
+      // }
+    }
+  },
   prefix: "",
   plugins: [tailwindAnimate],
 }

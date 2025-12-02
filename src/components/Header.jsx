@@ -42,7 +42,7 @@ const Header = () =>{
 
 
     return (
-        <header className="fixed bottom-0 sm:top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 shadow-lg md:top-0
+        <header className="fixed bottom-0 sm:top-0 left-0 w-full z-50 bg-body-color dark:bg-gray-900 shadow-lg md:top-0
         md:bottom-auto">
             <nav className="mx-auto px-4 h-12 md:h-16  flex justify-between items-center">
                 {/* Logo */}

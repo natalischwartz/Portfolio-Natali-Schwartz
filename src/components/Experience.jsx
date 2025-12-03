@@ -58,7 +58,7 @@ const Experience = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Título */}
         <div className="text-center mb-12">
-          <h2 className="section__title text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+          <h2 className="section__title text-3xl md:text-4xl font-bold text-title-color mb-2">
             Mi experiencia
           </h2>
           <span className="section__subtitle"></span>
@@ -103,7 +103,7 @@ const Experience = () => {
                     {index % 2 === 0 && (
                       <>
                         <div className="col-span-5 text-right pr-4">
-                          <h3 className="qualification__title text-lg font-semibold text-gray-800 mb-1">
+                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
                             {item.title}
                           </h3>
                           <span className="qualification__subtitle text-gray-600 block mb-2">
@@ -143,7 +143,7 @@ const Experience = () => {
                         </div>
                         
                         <div className="col-span-5 pl-4">
-                          <h3 className="qualification__title text-lg font-semibold text-gray-800 mb-1">
+                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
                             {item.title}
                           </h3>
                           <span className="qualification__subtitle text-gray-600 block mb-2">
@@ -172,7 +172,7 @@ const Experience = () => {
                     {index % 2 === 0 && (
                       <>
                         <div className="col-span-5 text-right pr-4">
-                          <h3 className="qualification__title text-lg font-semibold text-gray-800 mb-1">
+                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
                             {item.title}
                           </h3>
                           <span className="qualification__subtitle text-gray-600 block mb-2">
@@ -212,7 +212,7 @@ const Experience = () => {
                         </div>
                         
                         <div className="col-span-5 pl-4">
-                          <h3 className="qualification__title text-lg font-semibold text-gray-800 mb-1">
+                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
                             {item.title}
                           </h3>
                           <span className="qualification__subtitle text-gray-600 block mb-2">

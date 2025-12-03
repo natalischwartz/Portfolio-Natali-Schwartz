@@ -3,11 +3,11 @@ import { Download } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="about section py-16 bg-gray-50">
+    <section id="about" className="about section py-16 bg-body-color">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Sobre mí</h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-title-color mb-2">Sobre mí</h2>
+          {/* <div className="w-20 h-1 bg-blue-500 mx-auto"></div> */}
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -25,7 +25,7 @@ const About = () => {
 
           {/* Contenido */}
           <div className="lg:w-3/5">
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed text-justify">
+            <p className="text-lg text-text-color mb-8 leading-relaxed text-justify">
               Después de obtener mi título en Administración, decidí cambiar mi rumbo profesional para 
               adentrarme en el mundo de la tecnología. Me inscribí en Coderhouse y adquirí mi primer 
               certificado oficial en desarrollo web, donde pude descubrir la satisfacción que me genera 
@@ -41,19 +41,19 @@ const About = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 href="/CV-Natali-Schwartz.pdf" 
-                className="inline-flex items-center gap-3 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                className="inline-flex items-center gap-3 bg-first-color text-container-color px-6 py-3 rounded-lg hover:bg-first-color-alt transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <Download className="text-lg" />
                 <span className="font-medium">Descargar CV</span>
               </a>
               
               {/* Botón adicional opcional */}
-              <a 
+              {/* <a 
                 href="#contact" 
                 className="inline-flex items-center gap-3 border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-all duration-300"
               >
                 <span className="font-medium">Contactarme</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

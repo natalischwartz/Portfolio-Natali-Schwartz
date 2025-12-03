@@ -10,7 +10,7 @@ import {
 
 const Hero = () => {
     return(
-        <section id="hero"className="section min-h-screen flex items-center md:pt-20 z-10">
+        <section id="hero"className="section min-h-screen flex items-center md:pt-20 z-10  bg-body-color dark:bg-dark-body-color">
             <div className="container mx-auto px-4">
                 <div className="relative">
                     {/* Social Icons - Left Side */}
@@ -18,7 +18,7 @@ const Hero = () => {
                         <a href="https://www.linkedin.com/in/natali-schwartz"
                         target="_blank"
                         rel="noopener noreferer"
-                        className="home__social-icon text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 transition-colors"
+                        className="home__social-icon text-first-color hover:text-first-color-alt dark:text-dark-title-color dark:hover:text-first-color-lighter transition-colors"
                         aria-label="LinkedIn">
                             <Linkedin size={28} />
                         </a>
@@ -26,7 +26,7 @@ const Hero = () => {
                         <a href="https://github.com/natalischwartz"
                         target="_blank"
                         rel="noopener noreferer"
-                        className="home__social-icon text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 transition-colors"
+                        className="home__social-icon text-first-color hover:text-first-color-alt dark:text-dark-title-color dark:hover:text-first-color-lighter transition-colors"
                         aria-label="Github">
                             <Github size={28} />
                         </a>
@@ -43,12 +43,12 @@ const Hero = () => {
                     </div>
                     {/* Text Content */}
                     <div className="order-1 lg:order-2 text-center lg:text-left max-w-2xl">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">Hola mundo, Soy <span className="text-purple-600 dark:text-purple-400">Natali</span></h1>
-                        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">Desarrolladora Full Stack</h3>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-title-color dark:text-dark-title-color mb-4">Hola mundo, Soy <span className="text-first-color dark:text-dark-text-color">Natali</span></h1>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-title-color dark:text-gray-300 mb-6">Desarrolladora Full Stack</h3>
                         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 px-4 lg:px-0">Experiencia en Desarrollo Web y Diseño, produciendo proyectos de calidad</p>
                         <div className="flex flex-col gap-4 justify-center lg:justify-start">
                             <a href=""
-                            className="inline-flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30">
+                            className="inline-flex items-center justify-center gap-2 bg-first-color hover:bg-first-color-alt dark:bg-purple-500 dark:hover:bg-purple-600 text-container-color font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30">
                                 Contacto
                                 <MessageCircle size={20}/>
                             </a>

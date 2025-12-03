@@ -10,7 +10,7 @@ const Footer = () => {
           
           {/* Contenido principal */}
           <div className="footer__content text-center">
-            <h1 className="footer__title text-3xl font-bold mb-1">
+            <h1 className="footer__title text-3xl font-bold mb-1 text-title-color">
               Natali
             </h1>
             <span className="footer__subtitle text-blue-100">

@@ -4,12 +4,12 @@ import {Home,
   FileText, 
   Briefcase, 
   Image as ImageIcon, 
-  MessageCircle,
+  SendHorizontal,
   Moon,
   Sun,
   Menu,
   X,
-  Grid3x3} from 'lucide-react'
+  LayoutGrid} from 'lucide-react'
 
 
 const Header = () =>{
@@ -36,7 +36,7 @@ const Header = () =>{
     {href:"#skills", icon:FileText , text:"Habiliades"}, 
     {href:"#experience", icon:Briefcase , text:"Experiencia"}, 
     {href:"portfolio", icon:ImageIcon , text:"Portafolio"}, 
-    {href:"contact", icon:MessageCircle , text:"Contacto"} 
+    {href:"contact", icon:SendHorizontal , text:"Contacto"} 
     ]
 
 
@@ -60,7 +60,7 @@ const Header = () =>{
                             onClick={() =>{ setIsMenuOpen(false)}}
                             className="items-center p-4 rounded-lg hover:bg-first-color-lighter dark:hover:bg-gray-700 transition-colors group">
                                 {/* <Icon className="w-8 h-8 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"/> */}
-                                <span className="text-sm font-medium text-gray-900 dark:text-white">
+                                <span className="font-medium text-gray-900 dark:text-dark-title-color">
                                     {navLink.text}
                                 </span>
                             </a>
@@ -71,7 +71,7 @@ const Header = () =>{
                 <div className="flex items-center space-x-4">
                     {/* Boton tema */}
                     <button onClick={toggleTheme}
-                    className="text-title-color dark:text-dark-title-color hover:text-first-color
+                    className="text-title-color dark:text-first-color hover:text-first-color
                     dark:hover:text-first-color-lighter text-xl"
                     aria-label="Cambiar tema"
                     >
@@ -83,7 +83,7 @@ const Header = () =>{
                     onClick={()=> setIsMenuOpen(!isMenuOpen)}
                     className="sm:hidden text-title-color dark:text-dark-title-color text-xl"
                     aria-label="Abrir mnenú">
-                        <Grid3x3/>
+                        <LayoutGrid/>
                     </button>
                 </div>
 
@@ -107,7 +107,7 @@ const Header = () =>{
                             <a key={index} href={navLink.href}
                             onClick={() =>{ setIsMenuOpen(false)}}
                             className="flex flex-col items-center p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group">
-                                <Icon className="w-8 h-8 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"/>
+                                <Icon className=" text-title-color dark:text-purple-400 group-hover:scale-110 transition-transform"/>
                                 <span className="text-sm font-medium text-gray-900 dark:text-white">
                                     {navLink.text}
                                 </span>

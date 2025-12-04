@@ -1,19 +1,21 @@
 import React from 'react';
+import {Phone, Mail, MapPin} from 'lucide-react'
 
 const Contact = () => {
   return (
-    <section className="contact section" id="contact">
+    <section className="contact section dark:bg-dark-body-color" id="contact">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="section__title text-3xl font-bold text-center mb-12 text-title-color">
+        
+        <h2 className="section__title text-3xl font-bold text-center mb-12 text-title-color dark:text-dark-title-color">
           Contacto
         </h2>
 
         <div className="contact__container grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Teléfono */}
           <div className="contact__information flex flex-col items-center text-center p-6">
-            <i className="uil uil-phone contact__icon text-4xl text-blue-600 mb-4"></i>
+            <Phone className='dark:text-first-color'/>
             <div>
-              <h3 className="contact__title text-xl font-semibold text-title-color mb-1">
+              <h3 className="contact__title text-xl font-semibold text-title-color dark:text-dark-title-color mb-1">
                 Teléfono
               </h3>
               <a 
@@ -27,9 +29,9 @@ const Contact = () => {
 
           {/* Email */}
           <div className="contact__information flex flex-col items-center text-center p-6">
-            <i className="uil uil-envelope contact__icon text-4xl text-blue-600 mb-4"></i>
+            <Mail className='dark:text-first-color'/>
             <div>
-              <h3 className="contact__title text-xl font-semibold text-title-color mb-1">
+              <h3 className="contact__title text-xl font-semibold text-title-color dark:text-dark-title-color mb-1">
                 Email
               </h3>
               <a 
@@ -43,9 +45,9 @@ const Contact = () => {
 
           {/* Ubicación */}
           <div className="contact__information flex flex-col items-center text-center p-6">
-            <i className="uil uil-map-marker contact__icon text-4xl text-blue-600 mb-4"></i>
+            <MapPin className='dark:text-first-color'/>
             <div>
-              <h3 className="contact__title text-xl font-semibold text-title-color mb-1">
+              <h3 className="contact__title text-xl font-semibold text-title-color dark:text-dark-title-color mb-1">
                 Ubicación
               </h3>
               <span className="contact__subtitle text-gray-600">

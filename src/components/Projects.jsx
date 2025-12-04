@@ -34,11 +34,11 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="portfolio section py-16">
+    <section id="portfolio" className="portfolio section py-16 dark:bg-dark-body-color">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Título */}
         <div className="text-center mb-12">
-          <h2 className="section__title text-3xl md:text-4xl font-bold text-title-color mb-2">
+          <h2 className="section__title text-3xl md:text-4xl font-bold text-title-color dark:text-dark-title-color mb-2">
             Portfolio
           </h2>
           <div className="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>

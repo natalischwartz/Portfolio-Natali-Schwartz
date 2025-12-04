@@ -25,7 +25,7 @@ export default {
         // ========== MODO OSCURO ==========
         'dark-first-color-second': 'hsl(274, 30%, 8%)',
         'dark-title-color': 'hsl(274, 8%, 95%)',
-        'dark-text-color': 'hsl(274, 8%, 75%)',
+        'dark-text-color': 'hsl(274, 8%, 90%)',
         'dark-input-color': 'hsl(274, 29%, 16%)',
         'dark-body-color': 'hsl(274, 28%, 12%)',
         'dark-container-color': 'hsl(274, 29%, 16%)',

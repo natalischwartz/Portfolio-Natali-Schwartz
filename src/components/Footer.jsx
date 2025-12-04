@@ -4,13 +4,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer bg-blue-600 text-white py-8">
+    <footer className="footer bg-blue-600 text-white py-8 dark:bg-dark-container-color">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center gap-6">
           
           {/* Contenido principal */}
           <div className="footer__content text-center">
-            <h1 className="footer__title text-3xl font-bold mb-1 text-title-color">
+            <h1 className="footer__title text-3xl font-bold mb-1 text-title-color dark:text-dark-title-color">
               Natali
             </h1>
             <span className="footer__subtitle text-blue-100">

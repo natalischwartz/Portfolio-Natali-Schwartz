@@ -3,10 +3,10 @@ import { Download } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="about section py-16 bg-body-color">
+    <section id="about" className="about section py-16 bg-body-color dark:bg-dark-body-color">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-title-color mb-2">Sobre mí</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-title-color dark:text-dark-title-color mb-2">Sobre mí</h2>
           {/* <div className="w-20 h-1 bg-blue-500 mx-auto"></div> */}
         </div>
 

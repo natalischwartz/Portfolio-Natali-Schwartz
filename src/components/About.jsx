@@ -4,9 +4,9 @@ import { Download } from 'lucide-react';
 const About = () => {
   return (
     <section id="about" className="about section py-16 bg-body-color dark:bg-dark-body-color">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container flex flex-col justify-center items-center gap-8 max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-title-color dark:text-dark-title-color mb-2">Sobre mí</h2>
+          <h2 className="text-2xl font-semibold md:text-4xl text-title-color dark:text-dark-title-color mb-2">Sobre mí</h2>
           {/* <div className="w-20 h-1 bg-blue-500 mx-auto"></div> */}
         </div>
 
@@ -17,7 +17,7 @@ const About = () => {
               <img 
                 src="/img/about.jpg" 
                 alt="Natali Schwartz - Desarrolladora" 
-                className="w-72 h-72 object-cover rounded-2xl shadow-xl border-4 border-white"
+                className="w-[200px] object-cover rounded-lg shadow-xl border-4 border-white"
               />
               <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-blue-100 rounded-full -z-10"></div>
             </div>
@@ -25,7 +25,7 @@ const About = () => {
 
           {/* Contenido */}
           <div className="lg:w-3/5">
-            <p className="text-lg text-text-color mb-8 leading-relaxed text-justify">
+            <p className="text-lg text-text-color mb-8 leading-relaxed text-center dark:text-dark-text-color">
               Después de obtener mi título en Administración, decidí cambiar mi rumbo profesional para 
               adentrarme en el mundo de la tecnología. Me inscribí en Coderhouse y adquirí mi primer 
               certificado oficial en desarrollo web, donde pude descubrir la satisfacción que me genera 
@@ -35,7 +35,7 @@ const About = () => {
               conocimientos y mejorar mis habilidades como desarrolladora en un equipo de trabajo.
             </p>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center items-center gap-4">
               <a 
                 download="CV-Natali-Schwartz.pdf" 
                 target="_blank" 

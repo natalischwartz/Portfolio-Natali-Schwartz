@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {GraduationCap,BriefcaseBusiness,CalendarDays } from 'lucide-react';
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState('education');
@@ -58,7 +59,7 @@ const Experience = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Título */}
         <div className="text-center mb-12">
-          <h2 className="section__title text-3xl md:text-4xl font-bold text-title-color dark:text-dark-title-color mb-2">
+          <h2 className="section__title text-2xl font-semibold  md:text-4xl  text-title-color dark:text-dark-title-color mb-2">
             Mi experiencia
           </h2>
           <span className="section__subtitle"></span>
@@ -68,26 +69,26 @@ const Experience = () => {
         <div className="qualification__tabs flex justify-center gap-8 mb-10">
           <button
             onClick={() => setActiveTab('education')}
-            className={`qualification__button button--flex items-center gap-2 px-6 py-3 rounded-lg transition-all duration-300 ${
+            className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-all duration-300 ${
               activeTab === 'education'
-                ? 'text-blue-600 bg-blue-50 border border-blue-100'
-                : 'text-gray-600 hover:text-blue-600 hover:bg-gray-50'
+                ? 'text-title-color hover:text-first-color'
+                : 'text-gray-600 hover:text-first-color-lighter'
             }`}
           >
-            <i className="uil uil-graduation-cap qualification__icon text-xl"></i>
-            <span className="font-medium">Education</span>
+            <GraduationCap size={20} className='dark:text-dark-text-color'/>
+            <span className="font-medium dark:text-dark-text-color">Education</span>
           </button>
 
           <button
             onClick={() => setActiveTab('work')}
-            className={`qualification__button button--flex items-center gap-2 px-6 py-3 rounded-lg transition-all duration-300 ${
+            className={`flex items-center gap-2 px-6 py-3 rounded-lg transition-all duration-300 ${
               activeTab === 'work'
-                ? 'text-blue-600 bg-blue-50 border border-blue-100'
-                : 'text-gray-600 hover:text-blue-600 hover:bg-gray-50'
+                ? 'text-title-color hover:text-first-color'
+                : 'text-gray-600 hover:text-first-color-lighter'
             }`}
           >
-            <i className="uil uil-briefcase-alt qualification__icon text-xl"></i>
-            <span className="font-medium">Work</span>
+            <BriefcaseBusiness size={20} className='dark:text-dark-text-color'/>
+            <span className="font-medium dark:text-dark-text-color">Work</span>
           </button>
         </div>
 
@@ -103,23 +104,23 @@ const Experience = () => {
                     {index % 2 === 0 && (
                       <>
                         <div className="col-span-5 text-right pr-4">
-                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
+                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-gray-600 block mb-2">
+                          <span className="qualification__subtitle text-text-color block mb-2 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-gray-500 text-sm flex items-center justify-end gap-1">
-                            <i className="uil uil-calendar-alt"></i>
+                          <div className="qualification__calendar text-gray-500 text-sm flex items-center justify-end gap-1 dark:text-dark-text-color">
+                            <CalendarDays/>
                             {item.period}
                           </div>
                         </div>
                         
                         {/* Timeline line and dot */}
                         <div className="col-span-2 relative flex flex-col items-center">
-                          <span className="qualification__rounder w-4 h-4 bg-blue-500 rounded-full absolute top-1/2 transform -translate-y-1/2 z-10"></span>
+                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
                           {index !== educationData.length - 1 && (
-                            <span className="qualification__line w-0.5 h-full bg-blue-300 absolute top-1/2"></span>
+                            <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
                         </div>
                         
@@ -136,21 +137,21 @@ const Experience = () => {
                         
                         {/* Timeline line and dot */}
                         <div className="col-span-2 relative flex flex-col items-center">
-                          <span className="qualification__rounder w-4 h-4 bg-blue-500 rounded-full absolute top-1/2 transform -translate-y-1/2 z-10"></span>
+                          <span className="qualification__rounder qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
                           {index !== educationData.length - 1 && (
-                            <span className="qualification__line w-0.5 h-full bg-blue-300 absolute top-1/2"></span>
+                            <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
                         </div>
                         
                         <div className="col-span-5 pl-4">
-                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
+                          <h3 className="qualification__title text-lg font-medium text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-gray-600 block mb-2">
+                          <span className="qualification__subtitle inline-block text-text-color mb-2 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-gray-500 text-sm flex items-center gap-1">
-                            <i className="uil uil-calendar-alt"></i>
+                          <div className="qualification__calendar text-text-color-light text-sm flex items-center gap-1 dark:text-dark-text-color">
+                            <CalendarDays/>
                             {item.period}
                           </div>
                         </div>
@@ -172,23 +173,23 @@ const Experience = () => {
                     {index % 2 === 0 && (
                       <>
                         <div className="col-span-5 text-right pr-4">
-                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
+                          <h3 className="qualification__title text-lg font-medium text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-gray-600 block mb-2">
+                          <span className="qualification__subtitle inline-block text-text-color mb-2 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-gray-500 text-sm flex items-center justify-end gap-1">
-                            <i className="uil uil-calendar-alt"></i>
+                          <div className="qualification__calendar text-text-color-light text-sm flex items-center gap-1 dark:text-dark-text-color">
+                            <CalendarDays/>
                             {item.period}
                           </div>
                         </div>
                         
                         {/* Timeline line and dot */}
                         <div className="col-span-2 relative flex flex-col items-center">
-                          <span className="qualification__rounder w-4 h-4 bg-blue-500 rounded-full absolute top-1/2 transform -translate-y-1/2 z-10"></span>
+                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
                           {index !== workData.length - 1 && (
-                            <span className="qualification__line w-0.5 h-full bg-blue-300 absolute top-1/2"></span>
+                            <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
                         </div>
                         
@@ -205,21 +206,21 @@ const Experience = () => {
                         
                         {/* Timeline line and dot */}
                         <div className="col-span-2 relative flex flex-col items-center">
-                          <span className="qualification__rounder w-4 h-4 bg-blue-500 rounded-full absolute top-1/2 transform -translate-y-1/2 z-10"></span>
+                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
                           {index !== workData.length - 1 && (
-                            <span className="qualification__line w-0.5 h-full bg-blue-300 absolute top-1/2"></span>
+                            <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
                         </div>
                         
                         <div className="col-span-5 pl-4">
-                          <h3 className="qualification__title text-lg font-semibold text-title-color mb-1">
+                          <h3 className="qualification__title text-lg font-medium text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-gray-600 block mb-2">
+                          <span className="qualification__subtitle inline-block text-text-color mb-2 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-gray-500 text-sm flex items-center gap-1">
-                            <i className="uil uil-calendar-alt"></i>
+                          <div className="qualification__calendar text-text-color-light text-sm flex items-center gap-1 dark:text-dark-text-color">
+                            <CalendarDays/>
                             {item.period}
                           </div>
                         </div>

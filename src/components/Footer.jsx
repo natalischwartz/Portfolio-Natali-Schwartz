@@ -1,60 +1,61 @@
 import React from 'react';
+import {Twitter, Instagram, Facebook  } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer bg-blue-600 text-white py-8 dark:bg-dark-container-color">
+    <footer className="footer bg-first-color-second text-white py-8 dark:bg-dark-container-color flex flex-col mb-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center gap-6">
           
           {/* Contenido principal */}
           <div className="footer__content text-center">
-            <h1 className="footer__title text-3xl font-bold mb-1 text-title-color dark:text-dark-title-color">
+            <h1 className="footer__title text-2xl font-semibold mb-1 text-white dark:text-dark-title-color">
               Natali
             </h1>
-            <span className="footer__subtitle text-blue-100">
+            <span className="footer__subtitle text-white text-sm">
               Desarrolladora Fullstack
             </span>
           </div>
 
           {/* Redes sociales */}
-          <div className="footer__socials flex gap-6">
+          <div className="footer__socials text-xl mr-3 flex  gap-1">
             <a
               href="https://www.facebook.com/nati.schwartz.9"
               target="_blank"
               rel="noopener noreferrer"
-              className="footer__social text-xl hover:text-blue-200 transition-colors duration-300"
+              className="footer__social text-xl hover:text-first-color-lighter transition-colors duration-300"
               aria-label="Facebook"
             >
-              <i className="uil uil-facebook-f"></i>
+              <Facebook/>
             </a>
             <a
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="footer__social text-xl hover:text-blue-200 transition-colors duration-300"
+              className="footer__social text-xl hover:text-first-color-lighter transition-colors duration-300"
               aria-label="Instagram"
             >
-              <i className="uil uil-instagram"></i>
+              <Instagram/>
             </a>
             <a
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="footer__social text-xl hover:text-blue-200 transition-colors duration-300"
+              className="footer__social text-xl hover:text-first-color-lighter transition-colors duration-300"
               aria-label="Twitter"
             >
-              <i className="uil uil-twitter-alt"></i>
+              <Twitter/>
             </a>
           </div>
 
           {/* Copyright */}
-          <div className="footer__bottom text-center">
-            <p className="footer__copy text-sm text-blue-100 mb-1">
+          <div className="footer__bottom text-center dark:text-dark-title-color">
+            <p className="footer__copy text-xs text-white mt-2 text-center">
               © {currentYear} Natali. All right reserved
             </p>
-            <p className="footer__made text-sm text-blue-100">
+            <p className="footer__made text-xs text-white mt-2 text-center">
               Made with ❤️ by Natali
             </p>
           </div>

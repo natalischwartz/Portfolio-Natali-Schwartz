@@ -6,21 +6,21 @@ const Contact = () => {
     <section className="contact section dark:bg-dark-body-color" id="contact">
       <div className="container mx-auto px-4 max-w-4xl">
         
-        <h2 className="section__title text-3xl font-bold text-center mb-12 text-title-color dark:text-dark-title-color">
+        <h2 className="section__title text-2xl font-semibold md:text-4xl text-center mb-12 text-title-color dark:text-dark-title-color">
           Contacto
         </h2>
 
-        <div className="contact__container grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="contact__container grid grid-cols-1 md:grid-cols-3 ">
           {/* Teléfono */}
-          <div className="contact__information flex flex-col items-center text-center p-6">
-            <Phone className='dark:text-first-color'/>
-            <div>
-              <h3 className="contact__title text-xl font-semibold text-title-color dark:text-dark-title-color mb-1">
+          <div className="contact__information flex items-center text-center p-6 gap-4">
+            <Phone className='text-first-color text-4xl'/>
+            <div className='flex flex-col items-start'>
+              <h3 className="contact__title text-lg font-medium text-title-color dark:text-dark-title-color mb-1">
                 Teléfono
               </h3>
               <a 
                 href="tel:+5491161622602"
-                className="contact__subtitle text-gray-600 hover:text-blue-600 transition-colors"
+                className="contact__subtitle text-text-color-light text-sm"
               >
                 +54 9 116-162-2602
               </a>
@@ -28,15 +28,15 @@ const Contact = () => {
           </div>
 
           {/* Email */}
-          <div className="contact__information flex flex-col items-center text-center p-6">
-            <Mail className='dark:text-first-color'/>
-            <div>
-              <h3 className="contact__title text-xl font-semibold text-title-color dark:text-dark-title-color mb-1">
+          <div className="contact__information flex items-center text-center p-6 gap-4">
+            <Mail className='text-first-color text-4xl'/>
+            <div className='flex flex-col items-start'>
+              <h3 className="contact__title text-lg font-medium text-title-color dark:text-dark-title-color mb-1">
                 Email
               </h3>
               <a 
                 href="mailto:schwartznatali@gmail.com"
-                className="contact__subtitle text-gray-600 hover:text-blue-600 transition-colors"
+                className="contact__subtitle text-text-color-light text-sm"
               >
                 schwartznatali@gmail.com
               </a>
@@ -44,13 +44,13 @@ const Contact = () => {
           </div>
 
           {/* Ubicación */}
-          <div className="contact__information flex flex-col items-center text-center p-6">
-            <MapPin className='dark:text-first-color'/>
-            <div>
-              <h3 className="contact__title text-xl font-semibold text-title-color dark:text-dark-title-color mb-1">
+          <div className="contact__information flex items-center text-center p-6 gap-4">
+            <MapPin className='text-first-color text-4xl'/>
+            <div className='flex flex-col items-start'>
+              <h3 className="contact__title text-lg font-medium text-title-color dark:text-dark-title-color mb-1">
                 Ubicación
               </h3>
-              <span className="contact__subtitle text-gray-600">
+              <span className="contact__subtitle text-text-color-light text-sm">
                 Capital Federal, Buenos Aires, Argentina
               </span>
             </div>

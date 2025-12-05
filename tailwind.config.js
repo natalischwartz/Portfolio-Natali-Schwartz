@@ -4,7 +4,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
  darkMode: "class",
-  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}", "./app/**/*.{js,jsx}", "./src/**/*.{js,jsx}"],
+  content: ["./index.html","./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}", "./app/**/*.{js,jsx}", "./src/**/*.{js,jsx}"],
   theme: {
     extend:{
       colors:{
@@ -31,6 +31,9 @@ export default {
         'dark-container-color': 'hsl(274, 29%, 16%)',
         'dark-scroll-bar-color': 'hsl(274, 12%, 20%)',
         'dark-scroll-thumb-color': 'hsl(274, 12%, 30%)',
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
       },
       
     }

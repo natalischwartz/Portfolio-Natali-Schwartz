@@ -11,10 +11,10 @@ import {
 const Hero = () => {
     return(
         <section id="hero"className="section min-h-screen flex items-center md:pt-20 z-10  bg-body-color dark:bg-dark-body-color">
-            <div className="container mx-auto px-4">
+            <div className="container mt-16 px-4">
                 <div className="relative">
                     {/* Social Icons - Left Side */}
-                    <div className=" hidden absolute left-0 top-10 md:top-20 md:flex flex-col gap-6 z-10">
+                    <div className="absolute left-3 top-10 flex flex-col gap-4 z-10">
                         <a href="https://www.linkedin.com/in/natali-schwartz"
                         target="_blank"
                         rel="noopener noreferer"
@@ -55,7 +55,7 @@ const Hero = () => {
                         <a href="#contact"
                         className="inline-flex justify-center gap-2 bg-first-color hover:bg-first-color-alt dark:hover:bg-purple-600 text-container-color font-medium p-5 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30">
                             Contacto
-                            <SendHorizontal/>
+                            <SendHorizontal className="text-xl ml-2"/>
                         </a>
                         {/* <a href="#portfolio"
                             className="inline-flex items-center justify-center gap-2 border-2 border-purple-600 text-purple-600 hover:bg-purple-50 dark:border-purple-400 dark:text-purple-400 dark:hover:bg-purple-900/30 font-medium py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">

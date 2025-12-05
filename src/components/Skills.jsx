@@ -17,10 +17,10 @@ const Skills = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Título */}
         <div className="text-center mb-12">
-          <h2 className="section__title text-3xl md:text-4xl font-bold text-title-color dark:text-dark-title-color mb-2">
+          <h2 className="section__title text-2xl font-semibold md:text-4xl text-title-color dark:text-dark-title-color mb-2">
             Skills
           </h2>
-          <span className="section__subtitle"></span>
+          {/* <span className="section__subtitle"></span> */}
         </div>
 
         {/* Skills Grid */}
@@ -38,7 +38,7 @@ const Skills = () => {
                     className="max-h-12 sm:max-h-14 object-contain"
                   />
                 </div>
-                <span className="mt-3 text-sm font-medium text-gray-700">
+                <span className="mt-3 text-sm font-medium text-title-color dark:text-dark-text-color">
                   {skill.name}
                 </span>
               </div>

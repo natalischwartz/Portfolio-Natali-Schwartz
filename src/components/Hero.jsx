@@ -10,11 +10,11 @@ import {
 
 const Hero = () => {
     return(
-        <section id="hero"className="section min-h-screen flex items-center md:pt-20 z-10  bg-body-color dark:bg-dark-body-color">
-            <div className="container mt-16 px-4">
+        <section id="hero"className="section min-h-screen flex items-center py-16 z-10  bg-body-color dark:bg-dark-container-color">
+            <div className="container mx-auto  max-w-4xl">
                 <div className="relative">
                     {/* Social Icons - Left Side */}
-                    <div className="absolute left-3 top-10 flex flex-col gap-4 z-10">
+                    <div className="absolute left-3 top-16 flex flex-col gap-8">
                         <a href="https://www.linkedin.com/in/natali-schwartz"
                         target="_blank"
                         rel="noopener noreferer"
@@ -33,11 +33,11 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* Main Content */}
-                <div className="flex flex-col items-center justify-center gap-8 lg:gap-24">
+                <div className="flex flex-col items-center justify-center gap-8 ">
                     {/* Image Blob */}
 
-                    <div className="home__image flex justify-center items-center">
-                        <div className="blob relative mb-10 shadow-[0_0_10px_hsl(274, 69%, 61%)] rounded-[50%] bg-first-color-lighter w-[200px] h-[200px]">
+                    <div className="home__image flex justify-center items-center mt-4">
+                        <div className="blob relative mb-10 estilo-neon rounded-[50%] bg-first-color-lighter w-[200px] h-[200px]">
                             <img src="/img/perfil.jpeg" alt="Foto Natali"
                                 className="relative w-[100px] rounded-[40%] mx-auto top-5" />  
                         </div>
@@ -49,9 +49,9 @@ const Hero = () => {
                     </div> */}
                     {/* Text Content */}
                     <div className=" flex flex-col items-center justify-center text-center lg:text-left max-w-2xl">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-title-color dark:text-dark-title-color mb-4">Hola mundo, Soy <span className="text-first-color dark:text-dark-text-color">Natali</span></h1>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-title-color dark:text-dark-title-color mb-4 text-center">Hola mundo, Soy <span className="text-first-color dark:text-first-color-second">Natali</span></h1>
                         <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-text-color dark:text-gray-300 mb-6">Desarrolladora Full Stack</h3>
-                        <p className="text-lg md:text-xl text-text-color dark:text-gray-400 mb-8 px-4 lg:px-0">Experiencia en Desarrollo Web y Diseño, produciendo proyectos de calidad</p>
+                        <p className="text-lg md:text-xl text-text-color dark:text-gray-400 mb-8 px-4 lg:px-0 text-center">Experiencia en Desarrollo Web y Diseño, produciendo proyectos de calidad</p>
                         <a href="#contact"
                         className="inline-flex justify-center gap-2 bg-first-color hover:bg-first-color-alt dark:hover:bg-purple-600 text-container-color font-medium p-5 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30">
                             Contacto

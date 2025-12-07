@@ -10,7 +10,7 @@ const About = () => {
           {/* <div className="w-20 h-1 bg-blue-500 mx-auto"></div> */}
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row gap-12">
           {/* Imagen */}
           <div className="lg:w-2/5 flex justify-center">
             <div className="relative">

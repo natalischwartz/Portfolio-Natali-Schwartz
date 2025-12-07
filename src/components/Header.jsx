@@ -35,8 +35,8 @@ const Header = () =>{
     {href:"#about", icon:User , text:"Sobre mi"}, 
     {href:"#skills", icon:FileText , text:"Habiliades"}, 
     {href:"#experience", icon:Briefcase , text:"Experiencia"}, 
-    {href:"portfolio", icon:ImageIcon , text:"Portafolio"}, 
-    {href:"contact", icon:SendHorizontal , text:"Contacto"} 
+    {href:"#portfolio", icon:ImageIcon , text:"Portafolio"}, 
+    {href:"#contact", icon:SendHorizontal , text:"Contacto"} 
     ]
 
 
@@ -107,8 +107,8 @@ const Header = () =>{
                             <a key={index} href={navLink.href}
                             onClick={() =>{ setIsMenuOpen(false)}}
                             className="flex flex-col items-center p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group">
-                                <Icon className=" text-title-color dark:text-purple-400 group-hover:scale-110 transition-transform"/>
-                                <span className="text-base font-medium text-gray-900 dark:text-white">
+                                <Icon className=" text-first-color dark:text-purple-400 group-hover:scale-110 transition-transform"/>
+                                <span className="text-sm font-medium text-gray-900 dark:text-white">
                                     {navLink.text}
                                 </span>
                             </a>

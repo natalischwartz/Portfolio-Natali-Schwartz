@@ -18,7 +18,7 @@ const Hero = () => {
                         <a href="https://www.linkedin.com/in/natali-schwartz"
                         target="_blank"
                         rel="noopener noreferer"
-                        className="home__social-icon text-xl text-first-color hover:text-first-color-alt dark:text-dark-title-color dark:hover:text-first-color-lighter transition-colors"
+                        className="home__social-icon text-xl text-first-color hover:text-first-color-alt dark:text-first-color-lighter dark:hover:text-first-color-lighter transition-colors"
                         aria-label="LinkedIn">
                             <Linkedin />
                         </a>
@@ -26,7 +26,7 @@ const Hero = () => {
                         <a href="https://github.com/natalischwartz"
                         target="_blank"
                         rel="noopener noreferer"
-                        className="home__social-icon text-xl text-first-color hover:text-first-color-alt dark:text-dark-title-color dark:hover:text-first-color-lighter transition-colors"
+                        className="home__social-icon text-xl text-first-color hover:text-first-color-alt dark:text-first-color-lighter dark:hover:text-first-color-lighter transition-colors"
                         aria-label="Github">
                             <Github />
                         </a>
@@ -49,7 +49,7 @@ const Hero = () => {
                     </div> */}
                     {/* Text Content */}
                     <div className=" flex flex-col items-center justify-center text-center lg:text-left max-w-2xl">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-title-color dark:text-dark-title-color mb-4 text-center">Hola mundo, Soy <span className="text-first-color dark:text-first-color-second">Natali</span></h1>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-title-color dark:text-dark-title-color mb-4 text-center">Hola mundo, Soy <span className="text-first-color dark:text-first-color-lighter">Natali</span></h1>
                         <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-text-color dark:text-gray-300 mb-6">Desarrolladora Full Stack</h3>
                         <p className="text-lg md:text-xl text-text-color dark:text-gray-400 mb-8 px-4 lg:px-0 text-center">Experiencia en Desarrollo Web y Diseño, produciendo proyectos de calidad</p>
                         <a href="#contact"

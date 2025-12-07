@@ -79,12 +79,12 @@ const Portfolio = () => {
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <div className="portfolio__content overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full">
+                <div className="portfolio__content py-0 px-6 hover:shadow-xl transition-shadow duration-300 w-full">
                   <div className="portfolio__image-container">
                     <img 
                       src={project.image} 
                       alt={project.alt}
-                      className="portfolio__img w-[284px] h-[165px] rounded-3xl object-cover justify-self-center"
+                      className="portfolio__img w-[265px] rounded-lg object-cover justify-self-center"
                     />
                   </div>
                   <div className="portfolio__data flex flex-col items-center gap-4">

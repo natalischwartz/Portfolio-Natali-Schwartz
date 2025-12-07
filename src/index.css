@@ -29,11 +29,10 @@
   column-gap:1.5rem;
 }
 
-.qualification__sections{
-  display: grid;
-  grid-template-columns: 0.6fr;
-  justify-content: center;
+.swiper-pagination-horizontal{
+  bottom:auto;
 }
+
 /*==================== MEDIA QUERIES ====================*/
 
 @media screen and (max-width:422px){
@@ -45,9 +44,9 @@
 }
 
 @media screen and (min-width:568px){
-  .qualification__sections {
-    display: grid;
-    grid-template-columns: 0.6fr;
-    justify-content: center;
-  }
+  .qualification__sections{
+  display: grid;
+  grid-template-columns: 0.6fr;
+  justify-content: center;
+}
 }

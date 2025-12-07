@@ -55,8 +55,8 @@ const Experience = () => {
   const activeData = activeTab === 'education' ? educationData : workData;
 
   return (
-    <section id="experience" className="qualification py-16 section dark:bg-dark-container-color">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <section id="experience" className="qualification pt-4 pb-8 md:pt-8 md:pb-16 dark:bg-dark-container-color">
+      <div className="max-w-3xl mx-auto">
         {/* Título */}
         <div className="text-center">
           <h2 className="section__title mb-12 text-2xl font-semibold  md:text-4xl  text-title-color dark:text-dark-title-color">
@@ -103,14 +103,14 @@ const Experience = () => {
                     {/* Left side content (odd items) */}
                     {index % 2 === 0 && (
                       <>
-                        <div className="">
-                          <h3 className="qualification__title text-base font-medium text-title-color mb-1 dark:text-dark-text-color">
+                        <div className="pl-4">
+                          <h3 className="qualification__title text-sm sm:text-base text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-sm font-medium inline-block mb-4 text-text-color dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm inline-block mb-4 text-text-color dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-sm flex  dark:text-dark-text-color">
+                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2  dark:text-dark-text-color">
                             <CalendarDays/>
                             {item.period}
                           </div>
@@ -118,7 +118,7 @@ const Experience = () => {
                         
                         {/* Timeline line and dot */}
                         <div className="">
-                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
+                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-[50%]"></span>
                           {index !== educationData.length - 1 && (
                             <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
@@ -137,20 +137,20 @@ const Experience = () => {
                         
                         {/* Timeline line and dot */}
                         <div className="">
-                          <span className="qualification__rounder qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
+                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-[50%] "></span>
                           {index !== educationData.length - 1 && (
                             <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
                         </div>
                         
                         <div className="">
-                          <h3 className="qualification__title text-base font-medium text-title-color mb-1 dark:text-dark-text-color">
+                          <h3 className="qualification__title text-sm sm:text-base  text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle inline-block text-text-color mb-2 dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm  inline-block text-text-color mb-2 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-sm flex items-center gap-1 dark:text-dark-text-color">
+                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2 dark:text-dark-text-color">
                             <CalendarDays/>
                             {item.period}
                           </div>
@@ -172,54 +172,55 @@ const Experience = () => {
                     {/* Left side content (odd items) */}
                     {index % 2 === 0 && (
                       <>
-                        <div className="">
-                          <h3 className="qualification__title text-base font-medium text-title-color mb-1 dark:text-dark-text-color">
+                        <div className="pl-4">
+                          <h3 className="qualification__title text-sm sm:text-base  text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle inline-block text-text-color mb-2 dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm inline-block text-text-color mb-2 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-sm flex items-center gap-1 dark:text-dark-text-color">
+                          <div className="qualification__calendar text-text-color-light text-xs flex  gap-2 dark:text-dark-text-color">
                             <CalendarDays/>
                             {item.period}
                           </div>
                         </div>
                         
-                        {/* Timeline line and dot */}
+                         {/* Timeline line and dot */}
                         <div className="">
-                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
+                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-[50%]"></span>
                           {index !== workData.length - 1 && (
                             <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
                         </div>
                         
-                        {/* Empty div for right side */}
+                        
+                         {/* Empty div for right side */}
                         <div></div>
                       </>
                     )}
 
-                    {/* Right side content (even items) */}
+                     {/* Right side content (even items) */}
                     {index % 2 === 1 && (
                       <>
                         {/* Empty div for left side */}
-                        {/* <div className="col-span-5"></div>
-                         */}
+                        <div></div>
+                        
                         {/* Timeline line and dot */}
                         <div className="">
-                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-full"></span>
+                          <span className="qualification__rounder inline-block w-3 h-3 bg-first-color rounded-[50%]"></span>
                           {index !== workData.length - 1 && (
                             <span className="qualification__line block w-[1px] h-full bg-first-color translate-x-[6px] translate-y-[-7px]"></span>
                           )}
                         </div>
                         
                         <div className="">
-                          <h3 className="qualification__title text-base font-medium text-title-color mb-1 dark:text-dark-text-color">
+                          <h3 className="qualification__title text-sm sm:text-base text-title-color mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle inline-block text-text-color mb-2 dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm inline-block text-text-color mb-2 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-sm flex items-center gap-1 dark:text-dark-text-color">
+                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2 dark:text-dark-text-color">
                             <CalendarDays/>
                             {item.period}
                           </div>

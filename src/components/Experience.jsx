@@ -55,8 +55,8 @@ const Experience = () => {
   const activeData = activeTab === 'education' ? educationData : workData;
 
   return (
-    <section id="experience" className="qualification pt-4 pb-8 md:pt-8 md:pb-16 dark:bg-dark-container-color">
-      <div className="max-w-3xl mx-auto">
+    <section id="experience" className="qualification section py-16 dark:bg-dark-container-color">
+      <div className="max-w-6xl mx-auto container px-4">
         {/* Título */}
         <div className="text-center">
           <h2 className="section__title mb-12 text-2xl font-semibold  md:text-4xl  text-title-color dark:text-dark-title-color">

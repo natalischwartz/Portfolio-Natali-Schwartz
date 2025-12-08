@@ -3,7 +3,7 @@ import { Download } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="about section py-16 bg-body-color dark:bg-dark-container-color">
+    <section id="about" className="about section py-16 dark:bg-dark-container-color">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-semibold md:text-4xl text-title-color dark:text-dark-title-color mb-12">Sobre mí</h2>
@@ -19,7 +19,7 @@ const About = () => {
                 alt="Natali Schwartz - Desarrolladora" 
                 className="w-[200px] object-cover rounded-lg shadow-xl border-4 border-white"
               />
-              <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-blue-100 rounded-full -z-10"></div>
+              {/* <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-first-color-lighter rounded-full -z-10"></div> */}
             </div>
           </div>
 

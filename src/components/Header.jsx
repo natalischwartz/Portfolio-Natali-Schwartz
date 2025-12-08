@@ -42,9 +42,9 @@ const Header = () =>{
 
 
     return (
-        <header className="fixed bottom-0 sm:bottom-auto left-0 w-full z-50 bg-body-color dark:bg-dark-body-color shadow-lg md:top-0
+        <header  className="fixed bottom-0 sm:bottom-auto left-0 w-full z-50 bg-body-color dark:bg-dark-body-color shadow-lg md:top-0
         md:bottom-auto">
-            <nav className="mx-auto px-4 h-12 md:h-16  flex justify-between items-center">
+            <nav className=" mx-auto px-4 h-12 md:h-16  flex justify-between items-center">
                 {/* Logo */}
                 <a href="#" className="text-sm font-medium text-title-color dark:text-dark-title-color
                 hover:text-first-color transition-colors dark:hover:text-first-color-lighter">

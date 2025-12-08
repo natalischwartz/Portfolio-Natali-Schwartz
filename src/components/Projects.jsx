@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -48,7 +49,7 @@ const Portfolio = () => {
         {/* Slider con Swiper */}
         <div className="portfolio__slider">
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
             navigation={{
@@ -58,7 +59,7 @@ const Portfolio = () => {
             pagination={{ 
               clickable: true,
               dynamicBullets: true,
-              color:"first-color"
+              color:"red"
             }}
             autoplay={{
               delay: 5000,
@@ -79,7 +80,7 @@ const Portfolio = () => {
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <div className="portfolio__content py-0 px-6 hover:shadow-xl transition-shadow duration-300 w-full">
+                <div className="portfolio__content px-6 hover:shadow-lg transition-shadow duration-300 w-full flex flex-col items-center">
                   <div className="portfolio__image-container">
                     <img 
                       src={project.image} 
@@ -87,8 +88,8 @@ const Portfolio = () => {
                       className="portfolio__img w-[265px] rounded-lg object-cover justify-self-center"
                     />
                   </div>
-                  <div className="portfolio__data flex flex-col items-center gap-4">
-                    <h3 className="portfolio__title text-lg px-4 mt-4 font-bold text-title-color dark:text-dark-title-color mb-3">
+                  <div className="portfolio__data flex flex-col items-center gap-4 relative">
+                    <h3 className="portfolio__title text-center text-lg px-4 mt-2 font-bold text-title-color dark:text-dark-title-color">
                       {project.title}
                     </h3>
                     <p className="portfolio__description text-sm text-text-color dark:text-dark-title-color text-center">
@@ -98,7 +99,7 @@ const Portfolio = () => {
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="portfolio__button inline-flex items-center justify-center gap-2 bg-first-color text-container-color px-6 py-3 rounded-lg  hover:bg-first-color-alt transition-all duration-300 hover:gap-3 group"
+                      className=" portfolio__button inline-flex items-center justify-center gap-2 bg-first-color text-container-color px-6 py-3 rounded-lg  hover:bg-first-color-alt transition-all duration-300 hover:gap-3 group"
                     >
                       Ver Demo
                       <ArrowRight className='group-hover:translate-x-1 transition-transform duration-300'/>
@@ -112,7 +113,7 @@ const Portfolio = () => {
             <div className="swiper-button-prev-custom absolute left-0 top-[40%]  z-10 w-[30px] h-[30px] bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-first-color-lighter transition-colors duration-300 cursor-pointer">
             <ArrowLeft className='text-first-color text-xl'/>
             </div>
-            <div className="swiper-button-prev-custom absolute right-0 top-[40%]  z-10 w-[30px] h-[30px] bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-first-color-lighter transition-colors duration-300 cursor-pointer">
+            <div className="swiper-button-next-custom absolute right-0 top-[40%]  z-10 w-[30px] h-[30px] bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-first-color-lighter transition-colors duration-300 cursor-pointer">
             <ArrowRight className='text-first-color text-xl'/>
             </div>
           </Swiper>

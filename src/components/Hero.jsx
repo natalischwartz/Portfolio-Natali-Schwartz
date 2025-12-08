@@ -10,11 +10,11 @@ import {
 
 const Hero = () => {
     return(
-        <section id="hero"className="section min-h-screen flex items-center py-16 z-10  bg-body-color dark:bg-dark-container-color">
-            <div className="container mx-auto  max-w-4xl">
+        <section id="hero"className="section min-h-screen flex items-center py-16 z-10 dark:bg-dark-container-color">
+            <div id="home" className="px-4 container">
                 <div className="relative">
                     {/* Social Icons - Left Side */}
-                    <div className="absolute left-3 top-16 flex flex-col gap-8">
+                    <div className="absolute social__icons top-16 flex flex-col gap-8">
                         <a href="https://www.linkedin.com/in/natali-schwartz"
                         target="_blank"
                         rel="noopener noreferer"

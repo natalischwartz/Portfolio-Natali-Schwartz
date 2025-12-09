@@ -13,7 +13,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: 'Landing page de consultoría',
-      description: ' Landing page que incluye: Diseño completamente responsive y optimizado para SEO,formulario de contacto funcional integrado, secciones estructuradas: Quiénes Somos, Servicios, Clientes y CTA, implementación de código QR para acceso rápido, hosting y dominio configurados,código limpio, escalable con foco en rendimiento y accesibilidad. Lenguajes utilizados: React, Javascript, Tailwind CSS ',
+      description: 'Desarrollada con React, JavaScript y Tailwind CSS. La web incluye: Diseño responsive y optimizado para SEO, formulario de contacto funcional y secciones clave (Quiénes Somos, Servicios, Clientes, CTA), código QR integrado para acceso rápido, código limpio y escalable, con alto rendimiento y accesibilidad, hosting y dominio configurados e implementados',
       image: '/img/portada-lidera.PNG',
       alt: 'Portada landing page de consultoría',
       demoLink: 'https://lideratusalas.com.ar/'
@@ -42,6 +42,14 @@ const Portfolio = () => {
       alt: 'Portada sitio vet',
       demoLink: 'https://vet-app-chi.vercel.app/'
     },
+    // {
+    //   id: 5,
+    //   title: 'Landing page para Hotel',
+    //   description: 'Desarrollado con ',
+    //   image: '/img/portada-elRefugio.PNG',
+    //   alt: 'Portada sitio Hotel El Refugio ',
+    //   demoLink: 'https://hotel-el-refugio.vercel.app/'
+    // },
   ];
 
   return (

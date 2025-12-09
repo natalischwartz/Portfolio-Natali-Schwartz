@@ -11,6 +11,14 @@ import { ArrowRight,ArrowLeft} from 'lucide-react';
 const Portfolio = () => {
   const projects = [
     {
+      id: 4,
+      title: 'Landing page de consultoría',
+      description: ' Landing page que incluye: Diseño completamente responsive y optimizado para SEO,formulario de contacto funcional integrado, secciones estructuradas: Quiénes Somos, Servicios, Clientes y CTA, implementación de código QR para acceso rápido, hosting y dominio configurados,código limpio, escalable con foco en rendimiento y accesibilidad. Lenguajes utilizados: React, Javascript, Tailwind CSS ',
+      image: '/img/portada-lidera.PNG',
+      alt: 'Portada landing page de consultoría',
+      demoLink: 'https://lideratusalas.com.ar/'
+    },
+    {
       id: 1,
       title: 'Sitio web de telas responsivo',
       description: 'Contiene animaciones al hacer scroll. Consultas a una base de datos en la nube: Mongo DB Atlas. Incluye carrito de compras. Lenguajes utilizados: HTML, CSS, Javascript, Node JS, Express JS y Mongo DB.',
@@ -33,7 +41,7 @@ const Portfolio = () => {
       image: '/img/portada-website-vet.png',
       alt: 'Portada sitio vet',
       demoLink: 'https://vet-app-chi.vercel.app/'
-    }
+    },
   ];
 
   return (

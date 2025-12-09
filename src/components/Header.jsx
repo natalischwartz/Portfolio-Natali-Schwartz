@@ -33,7 +33,7 @@ const Header = () =>{
     const navItems = [
     {href:"#home", icon:Home , text:"Inicio"},
     {href:"#about", icon:User , text:"Sobre mi"}, 
-    {href:"#skills", icon:FileText , text:"Habiliades"}, 
+    {href:"#skills", icon:FileText , text:"Habilidades"}, 
     {href:"#experience", icon:Briefcase , text:"Experiencia"}, 
     {href:"#portfolio", icon:ImageIcon , text:"Portafolio"}, 
     {href:"#contact", icon:SendHorizontal , text:"Contacto"} 
@@ -42,7 +42,7 @@ const Header = () =>{
 
 
     return (
-        <header  className="fixed bottom-0 sm:bottom-auto left-0 w-full z-50 bg-body-color dark:bg-dark-body-color shadow-lg md:top-0
+        <header  className="fixed bottom-0 sm:bottom-auto left-0 w-full z-50 bg-body-color dark:bg-dark-container-color shadow-lg md:top-0
         md:bottom-auto">
             <nav className=" mx-auto px-4 h-12 md:h-16  flex justify-between items-center">
                 {/* Logo */}
@@ -58,7 +58,7 @@ const Header = () =>{
                         return(
                             <a key={index} href={navLink.href}
                             onClick={() =>{ setIsMenuOpen(false)}}
-                            className="text-sm tracking-wide  items-center p-4 rounded-lg hover:bg-first-color-lighter dark:hover:bg-gray-700 transition-colors group">
+                            className="text-xs tracking-wide  items-center p-4 rounded-lg hover:bg-first-color-lighter dark:hover:bg-gray-700 transition-colors group">
                                 {/* <Icon className="w-8 h-8 text-purple-600 dark:text-purple-400 group-hover:scale-110 transition-transform"/> */}
                                 <span className="font-medium text-gray-900 dark:text-dark-title-color">
                                     {navLink.text}
@@ -89,8 +89,8 @@ const Header = () =>{
 
                 {/* Menu mobile */}
                 {isMenuOpen && (
-                    <div className="absolute bottom-full left-0 w-full bg-body-color dark:bg-dark-body-color shadow-lg rounded-t-2xl p-6 md:hidden">
-                        <div className="flex justify-end mb-4">
+                    <div className="absolute bottom-0 left-0 w-full bg-body-color dark:bg-dark-container-color shadow-lg rounded-t-2xl py-8 px-5 md:hidden">
+                        <div className="flex justify-end">
                             <button
                             onClick={()=> setIsMenuOpen(false)}
                             className="text-first-color hover:text-first-color-alt dark:text-dark-title-color"
@@ -100,15 +100,15 @@ const Header = () =>{
                         </div>
 
 
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-3 gap-x-0">
                             {navItems.map((navLink, index)=>{
                                 const Icon = navLink.icon
                         return(
                             <a key={index} href={navLink.href}
                             onClick={() =>{ setIsMenuOpen(false)}}
                             className="flex flex-col items-center p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group">
-                                <Icon className=" text-first-color dark:text-purple-400 group-hover:scale-110 transition-transform"/>
-                                <span className="text-sm font-medium text-gray-900 dark:text-white">
+                                <Icon className=" text-title-color dark:text-white group-hover:scale-110 transition-transform" size={19}/>
+                                <span className="text-xs font-medium text-title-color dark:text-white">
                                     {navLink.text}
                                 </span>
                             </a>

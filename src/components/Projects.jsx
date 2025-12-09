@@ -58,7 +58,7 @@ const Portfolio = () => {
         {/* Título */}
         <div className="text-center mb-12">
           <h2 className="section__title text-2xl font-semibold mb-12 md:text-4xl text-title-color dark:text-dark-title-color">
-            Portfolio
+            Portafolio
           </h2>
           {/* <div className="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div> */}
         </div>
@@ -90,36 +90,36 @@ const Portfolio = () => {
                 slidesPerView: 1,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 1,
               },
             }}
             className="pb-12"
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <div className="portfolio__content px-6 hover:shadow-lg transition-shadow duration-300 w-full flex flex-col items-center">
+                <div className="portfolio__content  hover:shadow-lg transition-shadow duration-300 w-full grid py-0 px-10 gap-6 sm:grid sm:grid-cols-2">
                   <div className="portfolio__image-container">
                     <img 
                       src={project.image} 
                       alt={project.alt}
-                      className="portfolio__img w-[265px] rounded-lg object-cover justify-self-center"
+                      className="portfolio__img w-[265px] rounded-lg  justify-self-center"
                     />
                   </div>
-                  <div className="portfolio__data flex flex-col items-center gap-4 relative">
-                    <h3 className="portfolio__title text-center text-lg px-4 mt-2 font-bold text-title-color dark:text-dark-title-color">
+                  <div className="portfolio__data flex flex-col items-start gap-4 relative">
+                    <h3 className="portfolio__title text-lg mb-2 font-semibold text-title-color dark:text-dark-title-color">
                       {project.title}
                     </h3>
-                    <p className="portfolio__description text-sm text-text-color dark:text-dark-title-color text-center">
+                    <p className="portfolio__description mb-3 text-title-color dark:text-dark-title-color">
                       {project.description}
                     </p>
                     <a 
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className=" portfolio__button inline-flex items-center justify-center gap-2 bg-first-color text-container-color px-6 py-3 rounded-lg  hover:bg-first-color-alt transition-all duration-300 hover:gap-3 group"
+                      className=" portfolio__button inline-flex  gap-2 bg-first-color text-container-color px-6 py-3 rounded-lg  hover:bg-first-color-alt transition-all duration-300 hover:gap-3 group"
                     >
                       Ver Demo
                       <ArrowRight className='group-hover:translate-x-1 transition-transform duration-300'/>

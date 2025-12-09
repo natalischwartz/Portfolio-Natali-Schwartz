@@ -16,14 +16,14 @@ const Experience = () => {
       id: 2,
       title: 'Desarrollo web',
       subtitle: 'Coderhouse',
-      period: 'Agosto 2021- Noviembre 2021',
+      period: 'Ago 2021- Nov 2021',
       icon: 'graduation-cap'
     },
     {
       id: 3,
       title: 'Full stack Node Js',
       subtitle: 'Agencia de aprendizaje a lo largo de la vida',
-      period: 'Agosto 2023- Diciembre 2023',
+      period: 'Ago 2023- Dic 2023',
       icon: 'graduation-cap'
     }
   ];
@@ -31,7 +31,7 @@ const Experience = () => {
   const workData = [
     {
       id: 1,
-      title: 'Frontend Developer y Responsable administrativa de local',
+      title: 'Frontend Developer',
       subtitle: 'Decoronce - Comercio de telas',
       period: '2019-Actualidad',
       icon: 'briefcase-alt'
@@ -66,29 +66,29 @@ const Experience = () => {
         </div>
 
         {/* Tabs */}
-        <div className="qualification__tabs flex justify-evenly mb-8">
+        <div className="qualification__tabs flex justify-center mb-8 text-title-color">
           <button
             onClick={() => setActiveTab('education')}
-            className={`inline-flex text-lg items-center font-medium cursor-pointer rounded-lg transition-all duration-300 ${
+            className={`inline-flex mx-4 text-lg items-center font-medium cursor-pointer rounded-lg transition-all duration-300 ${
               activeTab === 'education'
-                ? 'text-title-color hover:text-first-color'
+                ? 'text-first-color hover:text-first-color-alt'
                 : 'text-gray-600 hover:text-first-color-lighter'
             }`}
           >
-            <GraduationCap size={20} className='dark:text-dark-text-color mr-1'/>
-            <span className="font-medium dark:text-dark-text-color">Education</span>
+            <GraduationCap size={30} className='dark:text-dark-text-color mr-1'/>
+            <span className="font-medium dark:text-dark-text-color">Educación</span>
           </button>
 
           <button
             onClick={() => setActiveTab('work')}
-            className={`inline-flex text-lg items-center font-medium cursor-pointer  rounded-lg transition-all duration-300 ${
+            className={`inline-flex mx-4 text-lg items-center font-medium cursor-pointer  rounded-lg transition-all duration-300 ${
               activeTab === 'work'
-                ? 'text-title-color hover:text-first-color'
+                ? 'text-first-color hover:text-first-color-alt'
                 : 'text-gray-600 hover:text-first-color-lighter'
             }`}
           >
-            <BriefcaseBusiness size={20} className='dark:text-dark-text-color mr-1'/>
-            <span className="font-medium dark:text-dark-text-color">Work</span>
+            <BriefcaseBusiness size={30} className='dark:text-dark-text-color mr-1'/>
+            <span className="font-medium dark:text-dark-text-color">Trabajo</span>
           </button>
         </div>
 
@@ -103,15 +103,15 @@ const Experience = () => {
                     {/* Left side content (odd items) */}
                     {index % 2 === 0 && (
                       <>
-                        <div className="pl-4">
-                          <h3 className="qualification__title text-sm sm:text-base text-title-color mb-1 dark:text-dark-text-color">
+                        <div className="">
+                          <h3 className="qualification__title text-title-color font-medium text-sm sm:text-base mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-xs sm:text-sm inline-block mb-4 text-text-color dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm inline-block mb-4 text-title-color  dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2  dark:text-dark-text-color">
-                            <CalendarDays/>
+                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2 ">
+                            <CalendarDays size={15}/>
                             {item.period}
                           </div>
                         </div>
@@ -144,14 +144,14 @@ const Experience = () => {
                         </div>
                         
                         <div className="">
-                          <h3 className="qualification__title text-sm sm:text-base  text-title-color mb-1 dark:text-dark-text-color">
+                          <h3 className="qualification__title text-title-color font-medium text-sm sm:text-base mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-xs sm:text-sm  inline-block text-text-color mb-2 dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm  inline-block text-title-color mb-4 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2 dark:text-dark-text-color">
-                            <CalendarDays/>
+                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2 ">
+                            <CalendarDays size={15}/>
                             {item.period}
                           </div>
                         </div>
@@ -172,15 +172,15 @@ const Experience = () => {
                     {/* Left side content (odd items) */}
                     {index % 2 === 0 && (
                       <>
-                        <div className="pl-4">
-                          <h3 className="qualification__title text-sm sm:text-base  text-title-color mb-1 dark:text-dark-text-color">
+                        <div className="">
+                          <h3 className="qualification__title text-title-color font-medium text-sm sm:text-base mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-xs sm:text-sm inline-block text-text-color mb-2 dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm inline-block text-title-color mb-4 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-xs flex  gap-2 dark:text-dark-text-color">
-                            <CalendarDays/>
+                          <div className="qualification__calendar text-text-color-light text-xs flex  gap-2 ">
+                            <CalendarDays size={15}/>
                             {item.period}
                           </div>
                         </div>
@@ -214,14 +214,14 @@ const Experience = () => {
                         </div>
                         
                         <div className="">
-                          <h3 className="qualification__title text-sm sm:text-base text-title-color mb-1 dark:text-dark-text-color">
+                          <h3 className="qualification__title text-title-color font-medium text-sm sm:text-base mb-1 dark:text-dark-text-color">
                             {item.title}
                           </h3>
-                          <span className="qualification__subtitle text-xs sm:text-sm inline-block text-text-color mb-2 dark:text-dark-text-color">
+                          <span className="qualification__subtitle text-xs sm:text-sm inline-block text-title-color mb-4 dark:text-dark-text-color">
                             {item.subtitle}
                           </span>
-                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2 dark:text-dark-text-color">
-                            <CalendarDays/>
+                          <div className="qualification__calendar text-text-color-light text-xs flex gap-2 ">
+                            <CalendarDays size={15}/>
                             {item.period}
                           </div>
                         </div>

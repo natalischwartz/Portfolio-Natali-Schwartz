@@ -1,10 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 import { ArrowRight,ArrowLeft} from 'lucide-react';
 
 const Portfolio = () => {
@@ -49,9 +50,12 @@ const Portfolio = () => {
         {/* Slider con Swiper */}
         <div className="portfolio__slider">
           <Swiper
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation,Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
+
+            loop={true}
+
             navigation={{
               nextEl: '.swiper-button-next-custom',
               prevEl: '.swiper-button-prev-custom',

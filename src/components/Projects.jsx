@@ -42,14 +42,14 @@ const Portfolio = () => {
       alt: 'Portada sitio vet',
       demoLink: 'https://vet-app-chi.vercel.app/'
     },
-    // {
-    //   id: 5,
-    //   title: 'Landing page para Hotel',
-    //   description: 'Desarrollado con ',
-    //   image: '/img/portada-elRefugio.PNG',
-    //   alt: 'Portada sitio Hotel El Refugio ',
-    //   demoLink: 'https://hotel-el-refugio.vercel.app/'
-    // },
+    {
+      id: 5,
+      title: 'Landing page para Psicóloga',
+      description: 'Desarrollado con React, JavaScript, Tailwind CSS. Incluye un formulario de contacto y un enlace a Whatsapp ',
+      image: '/img/portada-psicologa.JPG',
+      alt: 'Portada Landing page psicóloga',
+      demoLink: 'https://psicologa-micaela-sebo.vercel.app/'
+    },
   ];
 
   return (
